@@ -1,0 +1,45 @@
+
+    <link rel="stylesheet" href="/_common/css/newstyle.css">
+
+    <script src="/_common/js/smoothscroll.js"></script>
+    <script src="/_common/js/jquery-1.11.3.min.js"></script>
+
+    <script>
+       $(function(){
+           $("#toggle").click(function(){
+               $("#menu").slideToggle();
+               return false;
+           });
+           $(window).resize(function(){
+               var win = $(window).width();
+               var p = 480;
+               if(win > p){
+                   $("#menu").show();
+               } else {
+                   $("#menu").hide();
+               }
+           });
+       });
+    </script>
+
+<?php
+/*
+
+
+    <!-- ビューポートの設定 -->
+        <meta name="viewport" content="width=580">
+    <!-- InstanceBeginEditable name="doctitle" -->
+
+
+
+<!-- header dropdown用CSS -->
+<!-- <link rel="stylesheet" href="/_common/css/bootstrap_dropdown.min.css"> -->
+
+<!-- <link rel="preload" as="style" href="/_common/css/bootstrap_dropdown.min.css" onload="this.rel='stylesheet'"> -->
+<link rel="preload" as="style" href="/_common/css/bootstrap_dropdown.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/_common/css/bootstrap_dropdown.min.css"></noscript>
+
+
+<link rel="shortcut icon" href="/_common/image/favicon.ico" />
+*/
+?>
